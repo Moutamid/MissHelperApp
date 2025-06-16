@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_color"
+    tools:context=".activities.WelcomeActivity">
+
+    <ImageView
+        android:id="@+id/back_icon"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="33dp"
+        android:src="@drawable/ic_back" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/back_icon"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Back"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/back_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/outfit_medium"
+        android:gravity="center"
+        android:text="OTP Verification"
+        android:textColor="@color/white"
+        android:textSize="27dp" />
+
+    <LinearLayout
+        android:id="@+id/code_lyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcome_text"
+        android:layout_margin="20dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/otp_bg"
+            android:fontFamily="@font/outfit_regular"
+            android:gravity="center"
+            android:hint="1"
+            android:textSize="14dp" />
+
+        <EditText
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/otp_bg"
+            android:fontFamily="@font/outfit_regular"
+            android:gravity="center"
+            android:hint="2"
+            android:textSize="14dp" />
+
+        <EditText
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/otp_bg"
+            android:fontFamily="@font/outfit_regular"
+            android:gravity="center"
+            android:hint="3"
+            android:textSize="14dp" />
+
+        <EditText
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/otp_bg"
+            android:fontFamily="@font/outfit_regular"
+            android:gravity="center"
+            android:hint="4"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/code_lyt"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/btn_bg"
+        android:fontFamily="@font/outfit_regular"
+        android:text="Verify"
+        android:onClick="verify_code"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        tools:ignore="OnClick" />
+
+    <TextView
+        android:id="@+id/not_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/poppins_medium"
+        android:paddingEnd="30dp"
+        android:text="Don’t receive code?"
+        android:textColor="@color/white"
+        android:textSize="14dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="-25dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="20dp"
+        android:layout_toRightOf="@+id/not_account"
+        android:fontFamily="@font/poppins_medium"
+        android:onClick="sign_up"
+        android:text="@string/resend"
+        android:textColor="@color/pink"
+        android:textSize="14dp" />
+</RelativeLayout>
