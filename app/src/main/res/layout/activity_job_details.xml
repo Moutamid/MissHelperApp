@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".activities.WelcomeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/back_icon"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="43dp"
+            android:src="@drawable/ic_back"
+            android:tint="@color/app_color" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="40dp"
+            android:layout_toRightOf="@+id/back_icon"
+            android:fontFamily="@font/outfit_regular"
+            android:text="Back"
+            android:textColor="@color/app_color"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="35dp"
+            android:fontFamily="@font/outfit_medium"
+            android:text="Details"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/back_icon"
+                android:layout_margin="12dp"
+                android:elevation="2dp"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/icon"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="9dp"
+                    android:background="@drawable/circle_bg"
+                    android:backgroundTint="@color/light_blue"
+                    android:padding="10dp"
+
+                    android:src="@drawable/profile" />
+
+                <TextView
+                    android:id="@+id/job_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toEndOf="@id/icon"
+                    android:fontFamily="@font/outfit_bold"
+                    android:text="Lady Driver"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:id="@+id/job_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/job_title"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_toRightOf="@id/icon"
+                    android:fontFamily="@font/outfit_light"
+                    android:text="First Timer"
+                    android:textSize="13dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/job_details"
+
+                    android:layout_marginTop="34dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/experience"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/job_details"
+                            android:layout_marginStart="15dp"
+                            android:fontFamily="@font/outfit_medium"
+                            android:text="Experience:"
+                            android:textColor="#8A8894"
+                            android:textSize="13dp" />
+
+                        <TextView
+                            android:id="@+id/experience_details"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/experience"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="6dp"
+
+
+                            android:fontFamily="@font/outfit_medium"
+                            android:text="Minimum 2 Years"
+                            android:textColor="@color/black"
+                            android:textSize="11dp" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:background="@color/black" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/salary"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:fontFamily="@font/outfit_medium"
+                            android:text="Salary:"
+                            android:textColor="#8A8894"
+                            android:textSize="13dp" />
+
+                        <TextView
+                            android:id="@+id/salary_details"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/salary"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="6dp"
+
+                            android:fontFamily="@font/outfit_medium"
+                            android:text=" 1800AED/PH Licence"
+                            android:textColor="@color/black"
+                            android:textSize="11dp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/save_job"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/outfit_medium"
+                    android:gravity="end"
+                    android:src="@drawable/save_icon"
+
+                    android:textColor="@color/red"
+                    android:textSize="11dp" />
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/card_bg"
+                android:elevation="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/outfit_black"
+                    android:paddingStart="15dp"
+                    android:paddingTop="5dp"
+                    android:text="Job Description"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="12dp"
+                    android:fontFamily="@font/outfit_regular"
+                    android:paddingStart="15dp"
+                    android:text="We are hiring experienced Lady Drivers with a valid Philippines License and a minimum of 2 years driving experience. Applicants must be 24–35 years old, with a valid passport and completed medical. Tattoos or tomboy appearance are subject to approval. A competitive salary of 1800 AED is offered for qualified candidates."
+                    android:textSize="13dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/outfit_black"
+                android:paddingStart="15dp"
+                android:paddingTop="5dp"
+                android:text="Driving License Requirement:"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/outfit_medium"
+                android:paddingStart="15dp"
+                android:paddingTop="5dp"
+                android:text="\u2022  Valid Philippines License"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="-5dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/outfit_regular"
+                android:paddingStart="18dp"
+                android:paddingTop="5dp"
+                android:text="(UAE or GCC license with 2+ years of experience not required for this option"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/outfit_black"
+                android:paddingStart="15dp"
+                android:paddingTop="5dp"
+                android:text="Driving License Requirement:"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/outfit_medium"
+                android:paddingStart="15dp"
+                android:paddingTop="5dp"
+                android:text="\u2022  Passport with at least 2 years validity"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/outfit_medium"
+                android:paddingStart="15dp"
+                android:paddingTop="5dp"
+                android:text="\u2022  Full Medical Report"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/outfit_medium"
+                android:paddingStart="15dp"
+                android:paddingTop="5dp"
+                android:text="\u2022  Tattoo &amp; Tomboy: Subject to approval"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/outfit_medium"
+                android:paddingStart="15dp"
+                android:paddingTop="5dp"
+                android:text="\u2022  Valid &amp; Original Driver’s License Card"
+                android:textSize="14dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/btn_bg"
+                android:backgroundTint="@color/app_color"
+                android:fontFamily="@font/outfit_regular"
+                android:text="Apply"
+                android:onClick="apply_now"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_color"
+    tools:context=".activities.WelcomeActivity">
+
+    <ImageView
+        android:id="@+id/welcome_logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="220dp"
+        android:src="@drawable/success_mark" />
+
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcome_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/outfit_medium"
+        android:gravity="center"
+        android:text="Successfully Applied!"
+        android:textColor="@color/white"
+        android:textSize="27dp" />
+
+    <TextView
+        android:id="@+id/details_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcome_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/outfit_light"
+        android:gravity="center"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="You have successfully applied for this job."
+        android:textColor="@color/white"
+        android:textSize="21dp" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/track"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/details_txt"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/btn_bg"
+        android:fontFamily="@font/outfit_regular"
+        android:onClick="login"
+        android:text="Track your application"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/track"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/outfit_light"
+        android:gravity="center"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/back_to_homescreen"
+        android:textColor="@color/white"
+        android:onClick="back"
+        android:textSize="14dp" />
+
+</RelativeLayout>

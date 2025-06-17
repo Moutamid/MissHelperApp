@@ -3,4 +3,5 @@
     <string name="sign_up"><u>Sign up</u></string>
     <string name="log_in"><u>Log in</u></string>
     <string name="resend"><u>Resend</u></string>
+    <string name="back_to_homescreen"><u>Back to HomeScreen.</u>></string>
 </resources>

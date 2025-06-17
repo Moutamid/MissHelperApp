@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".activities.WelcomeActivity">
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/back_icon"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="43dp"
+            android:src="@drawable/ic_back"
+            app:tint="@color/app_color" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="40dp"
+            android:layout_toRightOf="@+id/back_icon"
+            android:fontFamily="@font/outfit_regular"
+            android:text="Back"
+            android:textColor="@color/app_color"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="35dp"
+            android:fontFamily="@font/outfit_medium"
+            android:text="Cover Latter"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/cover_latter"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_below="@+id/top_bar"
+        android:layout_margin="25dp"
+        android:background="@drawable/edit_background"
+        android:gravity="start"
+        android:hint="Write a cover letter..."
+        android:padding="15dp"
+        android:textSize="12dp" />
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cover_latter"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="-10dp"
+        android:fontFamily="@font/outfit_regular"
+        android:text="0/200"
+        android:gravity="end"
+        android:layout_marginEnd="23dp"
+
+        android:textColor="@color/app_color"
+        android:textSize="16dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/btn_bg"
+        android:backgroundTint="@color/app_color"
+        android:fontFamily="@font/outfit_regular"
+        android:text="Apply"
+        android:onClick="apply"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+</RelativeLayout>
