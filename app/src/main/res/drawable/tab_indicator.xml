@@ -1,0 +1,17 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Base: grey line under all tabs -->
+    <item>
+        <shape android:shape="rectangle">
+            <size android:height="4dp" />
+            <solid android:color="@color/light_grey" />
+        </shape>
+    </item>
+
+    <item android:id="@android:id/tabs">
+        <shape android:shape="rectangle">
+            <size android:height="4dp" />
+            <solid android:color="@color/app_color" />
+        </shape>
+    </item>
+</layer-list>

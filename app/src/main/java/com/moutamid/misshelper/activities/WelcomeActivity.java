@@ -97,5 +97,4 @@ public class WelcomeActivity extends AppCompatActivity {
 //        startActivity(new Intent(this, SignUpActivity.class));
     }
 
-
 }

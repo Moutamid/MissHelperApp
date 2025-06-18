@@ -4,4 +4,6 @@
     <string name="log_in"><u>Log in</u></string>
     <string name="resend"><u>Resend</u></string>
     <string name="back_to_homescreen"><u>Back to HomeScreen.</u>></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

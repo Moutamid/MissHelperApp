@@ -42,4 +42,5 @@ dependencies {
     androidTestImplementation(libs.ext.junit)
 //    implementation("com.github.qamarelsafadi:CurvedBottomNavigation:0.1.3")
     androidTestImplementation(libs.espresso.core)
+    implementation("de.hdodenhof:circleimageview:3.1.0")
 }

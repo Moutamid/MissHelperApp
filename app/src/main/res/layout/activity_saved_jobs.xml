@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".activities.WelcomeActivity">
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/back_icon"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="43dp"
+            android:src="@drawable/ic_back"
+            app:tint="@color/app_color" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="40dp"
+            android:layout_toRightOf="@+id/back_icon"
+            android:fontFamily="@font/outfit_regular"
+            android:text="Back"
+            android:textColor="@color/app_color"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="35dp"
+            android:fontFamily="@font/outfit_medium"
+            android:text="Saved Jobs"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_bar"
+      android:layout_marginTop="30dp"  android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/card_bg"
+        android:elevation="2dp"
+
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="9dp"
+            android:background="@drawable/circle_bg"
+            android:backgroundTint="@color/light_blue"
+            android:padding="10dp"
+
+            android:src="@drawable/profile" />
+
+        <TextView
+            android:id="@+id/job_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@id/icon"
+            android:fontFamily="@font/outfit_bold"
+            android:text="Lady Driver"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/job_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/job_title"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@id/icon"
+            android:fontFamily="@font/outfit_light"
+            android:text="Must have valid Philippines license with
+minimum 2 years experience in driving."
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/salary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/job_details"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="14dp"
+
+            android:fontFamily="@font/outfit_bold"
+            android:text="Salary:"
+            android:textColor="#737373"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/salary_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/job_details"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_toEndOf="@id/salary"
+            android:layout_toRightOf="@id/icon"
+            android:fontFamily="@font/outfit_medium"
+            android:text=" 1800AED/PH Licence"
+            android:textColor="#737373"
+            android:textSize="11dp" />
+
+        <ImageView
+            android:id="@+id/save_job"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/outfit_medium"
+            android:gravity="end"
+            android:src="@drawable/save_icon"
+
+            android:textColor="@color/red"
+            android:textSize="11dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/salary"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_bg"
+                android:backgroundTint="#86CBC9D4"
+                android:fontFamily="@font/outfit_medium"
+                android:gravity="center"
+                android:text="First Timer"
+                android:textColor="#525151" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_bg"
+                android:backgroundTint="#86CBC9D4"
+                android:fontFamily="@font/outfit_medium"
+                android:gravity="center"
+                android:text="24-35 y/o"
+                android:textColor="#525151" />
+
+            <TextView
+                android:id="@+id/details"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_bg"
+                android:backgroundTint="@color/app_color"
+                android:fontFamily="@font/outfit_light"
+                android:gravity="center"
+                android:text="View Details"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </RelativeLayout>
+   <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout1"
+      android:layout_marginTop="10dp"  android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/card_bg"
+        android:elevation="2dp"
+                android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/icon1"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="9dp"
+            android:background="@drawable/circle_bg"
+            android:backgroundTint="@color/light_blue"
+            android:padding="10dp"
+
+            android:src="@drawable/profile" />
+
+        <TextView
+            android:id="@+id/job_title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@id/icon1"
+            android:fontFamily="@font/outfit_bold"
+            android:text="Lady Driver"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/job_details1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/job_title1"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@id/icon1"
+            android:fontFamily="@font/outfit_light"
+            android:text="Must have valid Philippines license with
+minimum 2 years experience in driving."
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/salary1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/job_details1"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="14dp"
+
+            android:fontFamily="@font/outfit_bold"
+            android:text="Salary:"
+            android:textColor="#737373"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/salary_details1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/job_details1"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_toEndOf="@id/salary1"
+            android:layout_toRightOf="@id/icon1"
+            android:fontFamily="@font/outfit_medium"
+            android:text=" 1800AED/PH Licence"
+            android:textColor="#737373"
+            android:textSize="11dp" />
+
+        <ImageView
+            android:id="@+id/save_job1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/outfit_medium"
+            android:gravity="end"
+            android:src="@drawable/save_icon"
+
+            android:textColor="@color/red"
+            android:textSize="11dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/salary1"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_bg"
+                android:backgroundTint="#86CBC9D4"
+                android:fontFamily="@font/outfit_medium"
+                android:gravity="center"
+                android:text="First Timer"
+                android:textColor="#525151" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_bg"
+                android:backgroundTint="#86CBC9D4"
+                android:fontFamily="@font/outfit_medium"
+                android:gravity="center"
+                android:text="24-35 y/o"
+                android:textColor="#525151" />
+
+            <TextView
+                android:id="@+id/details"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_bg"
+                android:backgroundTint="@color/app_color"
+                android:fontFamily="@font/outfit_light"
+                android:gravity="center"
+                android:text="View Details"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/btn_bg"
+        android:backgroundTint="@color/app_color"
+        android:fontFamily="@font/outfit_regular"
+        android:onClick="apply"
+        android:text="Apply"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+</RelativeLayout>

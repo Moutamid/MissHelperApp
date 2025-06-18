@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".activities.WelcomeActivity">
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/back_icon"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="43dp"
+            android:src="@drawable/ic_back"
+            app:tint="@color/app_color" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="40dp"
+            android:layout_toRightOf="@+id/back_icon"
+            android:fontFamily="@font/outfit_regular"
+            android:text="Back"
+            android:textColor="@color/app_color"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="35dp"
+            android:fontFamily="@font/outfit_medium"
+            android:text="Feedback"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/experience_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_bar"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="-5dp"
+        android:fontFamily="@font/outfit_regular"
+        android:text="Rate your Experience"
+        android:textColor="#5D5D5D"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/comment_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rate_bar"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="23dp"
+        android:fontFamily="@font/outfit_regular"
+        android:text="Comment (Optional)"
+        android:textColor="#5D5D5D"
+        android:textSize="14dp" />
+
+    <LinearLayout
+        android:id="@+id/rate_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/experience_text"
+        android:layout_margin="20dp"
+        android:background="@drawable/card_bg"
+        android:elevation="7dp"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:id="@+id/emoji"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="14dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="14dp">
+
+            <ImageView
+                android:id="@+id/emoji1"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/circle_bg"
+                android:backgroundTint="#388E8DD0"
+                android:padding="15dp"
+                android:src="@drawable/bad" />
+
+            <ImageView
+                android:id="@+id/emoji2"
+
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/circle_bg"
+                android:backgroundTint="#388E8DD0"
+                android:padding="15dp"
+                android:src="@drawable/sad" />
+
+            <ImageView
+                android:id="@+id/emoji3"
+
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/circle_bg"
+                android:backgroundTint="#388E8DD0"
+                android:padding="15dp"
+                android:src="@drawable/happy" />
+
+            <ImageView
+                android:id="@+id/emoji4"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/circle_bg"
+                android:backgroundTint="#388E8DD0"
+                android:padding="15dp"
+                android:src="@drawable/smile" />
+
+            <ImageView
+                android:id="@+id/emoji5"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/circle_bg"
+                android:backgroundTint="#388E8DD0"
+                android:padding="15dp"
+                android:src="@drawable/laugh" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="14dp"
+            android:paddingTop="-20dp"
+            android:paddingEnd="14dp"
+            android:paddingBottom="8dp">
+
+            <TextView
+                android:id="@+id/text1"
+
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/outfit_medium"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="Disappointed"
+                android:textSize="9dp" />
+
+            <TextView
+                android:id="@+id/text2"
+
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/outfit_medium"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="Not Satisfied"
+
+                android:textSize="9dp" />
+
+            <TextView
+                android:id="@+id/text3"
+
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/outfit_medium"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="Neutral"
+                android:textSize="9dp" />
+
+            <TextView
+                android:id="@+id/text4"
+
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/outfit_medium"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="Satisfied"
+                android:textSize="9dp" />
+
+            <TextView
+                android:id="@+id/text5"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/outfit_medium"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="Loving it!"
+                android:textSize="9dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/cover_latter"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_below="@+id/comment_text"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/edit_background"
+        android:fontFamily="@font/outfit_regular"
+        android:gravity="start"
+        android:hint="Leave us a comment....."
+        android:padding="15dp"
+        android:textSize="14dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/btn_bg"
+        android:backgroundTint="@color/app_color"
+        android:fontFamily="@font/outfit_regular"
+        android:onClick="submit"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+</RelativeLayout>
