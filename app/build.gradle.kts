@@ -16,7 +16,9 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
-
+    buildFeatures {
+        dataBinding= true
+    }
     buildTypes {
         release {
             isMinifyEnabled = false
@@ -38,9 +40,12 @@ dependencies {
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
+    implementation(libs.navigation.runtime.android)
+    implementation(libs.navigation.fragment)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
-//    implementation("com.github.qamarelsafadi:CurvedBottomNavigation:0.1.3")
+    implementation("com.github.qamarelsafadi:CurvedBottomNavigation:0.1.3")
     androidTestImplementation(libs.espresso.core)
     implementation("de.hdodenhof:circleimageview:3.1.0")
+//    implementation("com.github.Akshay-Katariya:CurveBottomBar:1.0")
 }

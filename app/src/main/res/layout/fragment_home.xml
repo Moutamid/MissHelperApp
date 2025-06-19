@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.HomeFragment">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/outfit_medium"
+        android:text="Hello Beth!"
+        android:textColor="@color/app_color"
+        android:textSize="27dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_gravity="center"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/outfit_medium"
+        android:text="Ready to continue your journey? Track your status, upload documents, and earn rewards as you go."
+        android:textColor="@color/black"
+        android:textSize="14dp" />
+
+    <EditText
+        android:id="@+id/editTextSearch"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/back_icon"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/edit_bg"
+        android:backgroundTint="#C7E0E0E0"
+        android:drawableEnd="@drawable/search_icon"
+        android:fontFamily="@font/outfit_regular"
+        android:hint="Enter here"
+        android:paddingStart="18dp"
+        android:paddingEnd="20dp"
+        android:textSize="14dp" />
+
+</LinearLayout>
